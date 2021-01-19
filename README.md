@@ -8,7 +8,7 @@ https://www.npmjs.com/get-npm
 
 1. git clone https://github.com/nathanielMTucker/StarwarsDatabase.git
 2. npm init
-3. node starwars_webscrapping <Name-to-search> <optional-export-file>
+3. node starwars_webscrapping [Name-to-search] [optional-export-file]
 
 Name search mush be lowercase and have - inbetween spaces, no other special characters. Use starwars.com to get the proper name you want to search.
 Also, the exported file must be in json, it wont let you do any other kind of file.
@@ -38,4 +38,4 @@ will return
   }
 }
 
-**I totally did this instead of homework**
+***I totally did this instead of homework***
