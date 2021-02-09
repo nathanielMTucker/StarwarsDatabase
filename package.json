@@ -5,7 +5,8 @@
   "main": "starwars_webscrapping.js",
   "dependencies": {
     "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.5"
+    "cheerio": "^1.0.0-rc.5",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,18 +1,5 @@
 [
     {
-        "name": "Peli Motto",
-        "description": "The scrappy proprietor of Hangar 3-5 in the Mos Eisley Spaceport, Peli Motto makes a living refueling and repairing battered ships. With the help of a team of hyperactive pit droids, she can make quick work of the worst carbon scoring, but she's willing to tackle the job herself for an additional fee.",
-        "data": {
-            "Appearances": [
-                "The Mandalorian"
-            ],
-            "Locations": [
-                "Mos Eisley Spaceport",
-                "Tatooine"
-            ]
-        }
-    },
-    {
         "name": "Obi-Wan Kenobi",
         "description": "A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor.",
         "data": {

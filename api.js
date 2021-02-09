@@ -9,6 +9,20 @@ if(process.argv.length < 3 || process.argv[2] == "--help"){
 const query = process.argv[2]
 const exportFile = process.argv[3] || "starwars.json"
 const file = exportFile.split('.');
+
+try {
+    if(!fs.existsSync(exportFile)){
+        fs.writeFile(exportFile, "[]",(err, data)=>{
+            if(err){
+                console.log(err);
+            }
+        })
+    }
+} catch (error) {
+    console.log(error);
+}
+
+
 if(file[file.length -1] === "json"){
 axios.get(`https://www.starwars.com/databank/${query}`)
     .then(({data : html})=>{
@@ -49,9 +63,10 @@ axios.get(`https://www.starwars.com/databank/${query}`)
         }
         console.log(starwars);
         
-        
+                let raw = fs .readFileSync(exportFile)
+                let old = JSON.parse(raw);
                 console.log("Saving file");
-                fs.writeFile(exportFile, JSON.stringify(starwars), (err, data)=>{
+                fs.writeFile(exportFile, JSON.stringify([...old, starwars], null, 4), (err, data)=>{
                    if(err){
                        console.error(err);
                    }
